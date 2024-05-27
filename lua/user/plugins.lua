@@ -69,13 +69,11 @@ lvim.plugins = {
   {
     "tpope/vim-surround",
   },
-
   {
-    "hadronized/hop.nvim",
+    'phaazon/hop.nvim',
+    branch = 'v2',
     config = function()
       require('hop').setup()
     end
-
-
-  }
+  },
 }
