@@ -53,4 +53,29 @@ lvim.plugins = {
   {
     "sainnhe/everforest",
   },
+
+  {
+    "tpope/vim-dispatch",
+  },
+
+  {
+    "folke/todo-comments.nvim",
+    event = "BufRead",
+    config = function()
+      require("todo-comments").setup()
+    end
+  },
+
+  {
+    "tpope/vim-surround",
+  },
+
+  {
+    "hadronized/hop.nvim",
+    config = function()
+      require('hop').setup()
+    end
+
+
+  }
 }
